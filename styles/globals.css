@@ -1,12 +1,168 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap'); */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One&family=Coda&display=swap");
+* {
+  font-family: "Coda", cursive;
+  color: #eae7e0;
+}
+
+span {
+  color: #fa4552;
+}
+
+.Hero {
+  background-image: url(./assets/images/valo_background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.flip-card {
+  margin: 0 auto;
+  margin-top: 8rem;
+  width: 60%;
+  height: 60%;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  background-color: #0f1722;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  filter: drop-shadow(0px 0px 20px #000000de);
+  border: 10px solid #fa4552;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front h2,
+.flip-card-back h2 {
+  font-family: "Bowlby One", cursive;
+}
+
+.title {
+  margin-top: 1rem;
+}
+.desc {
+  margin: 1.5rem;
+}
+
+.foto {
+  width: 90%;
+  border-radius: 0px;
+  border: 3px solid;
+  border-image: linear-gradient(to right, #202e44, #fa4552) 3;
+  box-shadow: 0 0 10px 0 #00000080;
+  animation: float_aura 12s ease-in-out infinite;
+}
+
+.brimstone {
+  width: 26%;
+  position: absolute;
+  bottom: 1rem;
+  right: 0rem;
+  filter: drop-shadow(0px 15px 5px #0000009e);
+  animation: float 8s ease-in-out infinite;
+}
+
+.jett {
+  width: 26%;
+  position: absolute;
+  bottom: 1rem;
+  left: 0rem;
+  filter: drop-shadow(0px 15px 5px #0000009e);
+  animation: float 8s ease-in-out infinite;
+}
+
+.clicktoflip span:hover {
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 5px #ffffffc5);
+  color: #eae7e0;
+  transition: 0.3s;
+  font-weight: bolder;
+}
+
+.icon {
+  width: 56px;
+}
+
+.icon:hover {
+  width: 60px;
+  transition: 0.3s;
+}
+
+@media (min-width: 768px) {
+  .Hero {
+    height: 100vh;
+  }
+}
+
+/* animation */
+
+@keyframes float_aura {
+  0% {
+    filter: drop-shadow(0px 0px 4px #ffffff18);
+    transform: translatey(0px);
+    rotate: 1.3deg;
+  }
+
+  50% {
+    filter: drop-shadow(0px 0px 5px #fa455193);
+    transform: translatey(-20px);
+    rotate: -3deg;
+  }
+
+  100% {
+    filter: drop-shadow(0px 0px 4px #ffffff00);
+    transform: translatey(0px);
+    rotate: 1.3deg;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-20px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+/*
 body {
   @apply font-poppins;
 }
+*/
 
 /*
 :root {
