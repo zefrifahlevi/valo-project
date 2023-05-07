@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap'); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url("https://fonts.googleapis.com/css2?family=Bowlby+One&family=Coda&display=swap");
 * {
   font-family: "Coda", cursive;
@@ -15,7 +21,7 @@ span {
 }
 
 .Hero {
-  background-image: url(./assets/images/valo_background.png);
+  background-image: url(../pages/assets/images/brimstone.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
