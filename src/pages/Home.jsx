@@ -1,10 +1,10 @@
 import React from "react";
-import Hero from "../components/sections/Hero";
+import Valorant from "../components/sections/Valorant";
 
 const Home = () => {
   return (
     <div className="Home">
-      <Hero />
+      <Valorant />
     </div>
   );
 };

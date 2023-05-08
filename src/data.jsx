@@ -4,7 +4,7 @@ import imgPhoto from "./assets/images/Launching-bro.svg";
 import imgAbout from "./assets/images/outer_space_cuate.svg";
 
 const identity = {
-  name: "Zein Irfansyah",
+  name: "Zefri Fahlevi Irdiansyah",
 
   img: imgAbout,
 };

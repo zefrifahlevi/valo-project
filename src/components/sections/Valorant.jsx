@@ -6,7 +6,7 @@ import instagramicon from "../../assets/images/instagramicon.svg";
 import brimstone from "../../assets/images/brimstone.png";
 import jett from "../../assets/images/jett.png";
 
-const Hero = () => {
+const Valorant = () => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleFlip = () => {
@@ -21,7 +21,7 @@ const Hero = () => {
         <div className={`flip-card ${isFlipped ? "flipped" : ""}`}>
           <div className="flip-card-inner">
             <div className="flip-card-front">
-              <h2 className="title">ZEEMARIMO</h2>
+              <h2 className="title">Zefri Fahlevi</h2>
               <div className="desc">
                 <p>
                   Introducing Zee, codenamed <span>zeemarimo</span>, the newest
@@ -49,7 +49,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="flip-card-back">
-              <h2 className="title">ZEEMARIMO</h2>
+              <h2 className="title">Zefrifahlevi</h2>
               <div className="row">
                 <div className="col">
                   <div className="row">
@@ -58,11 +58,11 @@ const Hero = () => {
                         <tbody>
                           <tr>
                             <td>REAL NAME</td>
-                            <td>Zein Irfansyah</td>
+                            <td>Zefri Fahlevi Irdiansyah</td>
                           </tr>
                           <tr>
                             <td>CODENAME</td>
-                            <td>zeemarimo</td>
+                            <td>zefrifahlevi</td>
                           </tr>
                           <tr>
                             <td>ORIGIN</td>
@@ -131,7 +131,7 @@ const Hero = () => {
               Note: For now this website doesn't support mobile devices. Make
               sure you open it in your desktop browser.{" "}
             </p>{" "}
-            <p>© 2023 Zein Irfansyah. All rights reserved.</p>
+            <p>© 2023 Zefri Fahlevi Irdiansyah. All rights reserved.</p>
           </div>
         </div>
       </div>
@@ -139,4 +139,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Valorant;
